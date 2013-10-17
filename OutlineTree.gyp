@@ -7,6 +7,9 @@
         "default_configuration": "Release",
         "configurations": {
             "Debug": {
+                "defines": [
+                    "DEBUG"
+                ],
                 "conditions": [
                     [
                     "build_mode=='shared_library'", {
