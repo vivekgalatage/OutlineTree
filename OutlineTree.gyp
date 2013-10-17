@@ -31,6 +31,16 @@
             ]
         },
         {
+            "target_name": "otree",
+            "type": "executable",
+            "sources": [
+                "src/app/main.cpp"
+            ],
+            "include_dirs": [
+                "src"
+            ]
+        },
+        {
             "target_name": "unitTestRunner",
             "type": "executable",
             "dependencies": [
