@@ -34,9 +34,10 @@ Test* testGenerator()
 }
 
 #define REGISTER_TEST(className) \
-    bool _id##className = ds::testing::TestFramework::addToRegistry(#className, ds::testing::testGenerator<className>)
+    bool _id##className = otree::testing::TestFramework::addToRegistry(#className, otree::testing::testGenerator<className>)
 
 }; // namespace testing
 }; // namespace otree
 
 #endif // OTREE_TESTING_TESTFRAMEWORK_H
+

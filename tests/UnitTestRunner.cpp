@@ -36,7 +36,7 @@ bool UnitTestRunner::execute()
 }
 
 }; // namespace testing
-}; // namespace ds
+}; // namespace otree
 
 int main(int argc, char** argv)
 {

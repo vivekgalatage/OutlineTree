@@ -33,4 +33,5 @@ bool TestFramework::addToRegistry(const std::string& id, TestGenerator testGener
 }
 
 }; // namespace testframework
-}; // namespace ds
+}; // namespace otree
+
