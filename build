@@ -1,0 +1,10 @@
+#!/usr/bin/python
+from subprocess import call
+
+import os
+
+call(["git", "submodule", "init"])
+call(["git", "submodule", "update"])
+os.system("GYP_GENERATORS=ninja ./third-party/gyp/gyp --depth=. OutlineTree.gyp")
+os.system("ninja -C out/Debug")
+os.system("ninja -C out/Release")
