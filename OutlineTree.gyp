@@ -13,12 +13,15 @@
                 "conditions": [
                     [
                     "build_mode=='shared_library'", {
-                        "cflags": ["-Wall", "-g", "-fPIC"]
+                        "cflags": ["-Wall", "-g", "-fPIC", "-std=c++11"]
                     }]
                 ]
             },
             "Release": {
-                "cflags": ["-Wall"]
+                "defines": [
+                    "DEBUG"
+                ],
+                "cflags": ["-Wall", "-std=c++11"]
             }
         }
     },
@@ -34,7 +37,8 @@
             "target_name": "otree",
             "type": "executable",
             "sources": [
-                "src/app/main.cpp"
+                "src/app/main.cpp",
+                "src/app/CommandLine.cpp"
             ],
             "include_dirs": [
                 "src"
