@@ -28,7 +28,7 @@ CommandLine& CommandLine::current()
     return instance;
 }
 
-bool CommandLine::parseFrom(int argc, char** argv, Error& error)
+void CommandLine::parseFrom(int argc, char** argv, Error& error)
 {
     for (int i = 1; i < argc; ++i) {
         string arg(argv[i]);
@@ -50,7 +50,6 @@ bool CommandLine::parseFrom(int argc, char** argv, Error& error)
             arguments_[key] = value;
         }
     }
-    return true;
 }
 
 vector<string> CommandLine::arguments() const
