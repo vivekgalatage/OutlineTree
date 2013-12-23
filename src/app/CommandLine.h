@@ -35,7 +35,7 @@ public:
 private:
     CommandLine() { }
 
-    bool parseFrom(int argc, char** argv, Error& error);
+    void parseFrom(int argc, char** argv, Error& error);
 
 private:
     map<string, string> arguments_;
