@@ -71,4 +71,9 @@ void CommandLine::addArgument(const string& arg, const string& value)
     arguments_[arg] = value;
 }
 
+void CommandLine::addArgument(char arg)
+{
+    addArgument(&arg);
+}
+
 }; // namespace otree

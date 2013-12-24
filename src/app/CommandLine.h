@@ -31,6 +31,7 @@ public:
     bool hasArgument(const string& argument) const;
 
     void addArgument(const string& arg, const string& value = "");
+    void addArgument(char arg);
 
 private:
     CommandLine() { }
